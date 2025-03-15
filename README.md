@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# Gestor de Finanças
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
 
-Currently, two official plugins are available:
+O Gestor de Finanças é um aplicativo web que tem como objetivo ajudar os usuários a gerenciar suas finanças pessoais. Nele, o usuário pode cadastrar sua receita mensal e suas despesas – como contas de luz, internet, aluguel, entre outros – para ter uma visão clara do seu orçamento. O foco é oferecer uma interface simples, intuitiva e eficiente para que qualquer pessoa possa ter controle financeiro.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- **Cadastro de Receitas:** Permite inserir a receita mensal.
+- **Cadastro de Despesas:** Possibilita o registro de despesas, categorizando-as (ex.: luz, internet, aluguel).
+- **Resumo Financeiro:** Gera uma visão consolidada do orçamento, mostrando o total de receitas e despesas.
+- **Interface Responsiva:** Design moderno e adaptável a diferentes dispositivos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Frontend
+- **React** com **TypeScript:** Proporciona uma estrutura robusta e segura para o desenvolvimento da interface, garantindo uma experiência de usuário dinâmica e com menos erros.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Backend
+- **Em Construção:** Ainda estou decidindo qual tecnologia utilizar, mas projavelmente será Java ou Nodejs.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Como Executar
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/gestor-de-financas.git
+   ```
+2. **Acesse o diretório do projeto:**
+   ```bash
+   cd gestor-de-financas
+   ```
+3. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+4. **Inicie a aplicação:**
+   ```bash
+   npm start
+   ```
+5. **Abra no navegador:**  
+   Acesse [http://localhost:3000](http://localhost:3000) para ver a aplicação rodando.
+
+## Contribuindo
+
+Contribuições são super bem-vindas! Se você tiver sugestões, encontrar algum bug ou quiser colaborar com o desenvolvimento, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
