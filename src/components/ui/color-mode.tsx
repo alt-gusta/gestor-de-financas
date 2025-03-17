@@ -69,6 +69,7 @@ export const ColorModeButton = React.forwardRef<
         }}
       >
         <ColorModeIcon />
+        {useColorModeValue("Dark Mode", "Light Mode")}
       </IconButton>
     </ClientOnly>
   )
