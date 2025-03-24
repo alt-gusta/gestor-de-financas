@@ -23,7 +23,7 @@ export const Login = () => (
         </Stack>
       </Card.Body>
       <Card.Footer justifyContent="flex-end">
-        <Button variant="outline">Cancelar</Button>
+        <Button variant="outline">Voltar</Button>
         <Button variant="solid">Entrar</Button>
       </Card.Footer>
     </Card.Root>
