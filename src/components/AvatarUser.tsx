@@ -1,5 +1,5 @@
 import { Avatar, HStack, Menu, Portal } from "@chakra-ui/react"
-import { ColorModeButton, useColorModeValue } from "./ui/color-mode"
+import { ColorModeButton } from "./ui/color-mode"
 
 const colorPalette = ["red", "blue", "green", "yellow", "purple", "orange"]
 
@@ -25,8 +25,8 @@ export const AvatarUser = () => {
               <ColorModeButton />
               
             </Menu.Item>
-            <Menu.Item value="">Perfil</Menu.Item>
-            <Menu.Item value="">Sobre</Menu.Item>
+            <Menu.Item value="perfil">Perfil</Menu.Item>
+            <Menu.Item value="sobre">Sobre</Menu.Item>
           </Menu.Content>
         </Menu.Positioner>
       </Portal>
